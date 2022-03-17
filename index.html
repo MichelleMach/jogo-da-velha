@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+
+    <div id="infos">
+
+        <h1>Jogo da Velha</h1>
+        
+        <div id="nomes">
+
+            <input id="jogador1" type="text" name="jogador1" value="" placeholder="Digite o seu nome:" >
+            <input id="jogador2" type="text" name="jogador2" value="" placeholder="Digite o nome do seu oponente:" >
+            <button class="button" onclick="window.location.reload()" value="reset">Recomeçar</button>
+            <!-- Com o window.location.reload() voce pode resetar todo o processo do windows, sem precisar de qualquer função-->
+
+        </div>
+
+        
+
+    </div>
+
+
+    <div id="container">
+        
+        <div class="linha 1">
+
+            <div id="0" class="square"></div>
+            <div id="1" class="square"></div>
+            <div id="2" class="square"></div>
+
+        </div>
+
+        <div class="linha 2">
+
+            <div id="3" class="square"></div>
+            <div id="4" class="square"></div>
+            <div id="5" class="square"></div>
+
+        </div>
+
+        <div class="linha 3">
+
+            <div id="6" class="square"></div>
+            <div id="7" class="square"></div>
+            <div id="8" class="square"></div>
+
+        </div>
+
+    
+
+
+    </div>
+
+
+    <script src="game.js"></script>
+    <script src="interface.js"></script>
+    
+</body>
+</html>

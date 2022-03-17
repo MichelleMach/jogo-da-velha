@@ -1,0 +1,157 @@
+
+@keyframes changeColor {
+
+    0% {background-color: rgb(230, 231, 230) }
+    25% {background-color:rgb(202, 204, 226)} 
+    50% {background-color:rgb(204, 196, 218)} 
+    75% {background-color:rgb(209, 177, 184)} 
+    100% {background-color:rgb(216, 216, 189)} 
+
+
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#infos{
+
+    display: inline-block;
+   
+    margin-top: 15%;
+    margin-left: 10%;
+    
+}
+
+h1{
+
+    margin: 0;
+    margin-bottom: 5px;
+    color: rgb(129, 129, 129);
+    font-size: 50px;
+}
+
+#nomes {
+
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+
+}
+
+#jogador1{
+
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border-width: 1px;
+    width: 200px;
+    height: 20px;
+    border-color: whitesmoke;
+   
+}
+
+#jogador2{
+
+    padding: 15px;
+    border-radius: 10px;
+    border-width: 1px;
+    width: 200px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-color: whitesmoke;
+    
+}
+
+button{
+
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: whitesmoke;
+    
+    animation-name: changeColor;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+#container{
+    
+    float: right;
+    
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+  
+    text-align: center;  /*div pai, falando para div filho */
+    /* vertical-align só funciona com display: table cell */
+
+    width: auto;
+    height: 100%;
+    
+    border-radius: 1px 50px;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+.square{
+
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+   
+    
+   
+    animation-name: changeColor;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+    
+   
+}
+
+.o{
+
+    position: relative;
+
+}
+
+.o:after {
+
+    position: absolute;
+    top: 35px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    content: "\25EF";
+    color: white;
+    font-size: 100px;
+    line-height: 100px;
+
+   
+}
+
+.x{
+    position: relative;
+}
+
+.x:after{
+
+    position: absolute;
+    top: 35px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    content: "\2717"; 
+    color: white;
+    font-size: 100px;
+    line-height: 100px; 
+}
